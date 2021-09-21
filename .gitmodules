@@ -1,0 +1,6 @@
+[submodule "test/vendor/leveldb"]
+	path = test/vendor/leveldb
+	url = https://github.com/google/leveldb.git
+[submodule "test/vendor/inireader"]
+	path = test/vendor/inireader
+	url = https://github.com/X-rays5/inireader.git
