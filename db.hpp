@@ -56,6 +56,11 @@ namespace simple_db {
     leveldb::ReadOptions& GetReadOptions() {
       return roptions_;
     }
+    
+    // need to call delete iter;
+    leveldb::Iterator* GetIterator() {
+    	return db_->NewIterator(roptions_);
+    }
    private:
     leveldb::DB* db_;
     leveldb::WriteOptions woptions_;
